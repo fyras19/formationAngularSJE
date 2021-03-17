@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'formation-sje';
+  opened: boolean;
+
+  constructor(){
+    this.opened = true;
+  }
+
+  toggleNavbar(): void{
+    this.opened = !this.opened;
+  }
+
 }
